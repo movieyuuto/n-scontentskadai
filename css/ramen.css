@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+
+/*トップへ自動スクロール*/
+.back-to-top {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    color: #fff;
+    width: 100px;
+    height: 800px;
+    z-index: 2;
+    display: none;
+}
+.back-to-top:before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #1600f8;
+}
+.back-to-top:after {
+    content: "←";
+    display: block;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+h2
+{
+	font-size: 20px;
+	font-weight: normal;
+	color: #000;
+	font-family:sans-serif;
+}
+
+
+html,body
+{
+	background-color: rgba(0,0,0,0.8);
+	height:100%; margin:0; 
+}
+
+.naritake
+{
+	position: relative;
+	width:1000px;
+	padding:50px 50px 0 50px;
+	margin-left:160px;
+	top:3010px;
+	background: #fff;
+	border: solid 5px;
+}
+
+.tsukumo
+{
+	position: relative;
+	width:1000px;
+	padding:50px 50px 0 50px;
+	margin-left:1500px;
+	top:2420px;
+	background: #fff;
+	border: solid 5px;
+}
+
+.namiki
+{
+	position: relative;
+	width:1000px;
+	padding:50px 50px 0 50px;
+	margin-left:2900px;
+	top:1830px;
+	background: #fff;
+	border: solid 5px;
+}
+
+.hissyouken
+{
+	position: relative;
+	width:1000px;
+	padding:50px 50px 0 50px;
+	margin-left:4300px;
+	top:1210px;
+	background: #fff;
+	border: solid 5px;
+}
+
+.mugendai
+{
+	position: relative;
+	width:1000px;
+	padding:50px 50px 0 50px;
+	margin-left:5700px;
+	top:600px;
+	background: #fff;
+	border: solid 5px;
+}
+
+.suzukisan
+{
+	position: relative;
+	width:1000px;
+	padding:50px 50px 0 50px;
+	margin-left:7000px;
+	background: #fff;
+	border: solid 5px;
+}
+
+
+/**
+* important: keep position fixed, you can however use top:0 instead of bottom:0
+* if you want to make it stick to the top of the browser
+*/
+
+
+.scroll
+{
+	z-index: 6;
+	position: fixed;
+	bottom:0;
+}
+
+
+.title
+{
+	z-index: 5;
+	position: fixed;
+	top:-60px;
+  margin-left:500px;
+}
+
+/**
+* z-index ordering of the different layers, do this for your layers,
+* also assign absolute width (to prevent issues if the script gets executed before the images get loaded)
+*/
+
+.horizon
+{
+z-index: 1;
+width: 3000px;
+position: relative;
+top:300px;
+}
+
+
+.middle
+{
+position: fixed;
+z-index: 2;
+width: 4000px;
+margin-left:-5px;
+top:160px;
+}
+
+
+.front
+{
+	text-align: center;
+	z-index: 5;
+	width: 8300px;
+}
