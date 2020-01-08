@@ -133,7 +133,7 @@ html,body
 .title
 {
 	z-index: 5;
-	position: relative;
+	position: fixed;
 	top:-60px;
 	margin 0 auto;
 }
